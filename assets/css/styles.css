@@ -137,7 +137,7 @@ header nav a {
 }
 
 .chat-container aside {
-    height: 100vh;
+    height: 90vh;
     background: #fff;
     position: fixed;
     width: 20%;
@@ -147,6 +147,7 @@ header nav a {
 .chat-container aside .users-list {
     margin: 10px;
     /* width: 100%; */
+    overflow-y: auto;
 }
 
 aside .users-list a {
