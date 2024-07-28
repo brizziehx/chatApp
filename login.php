@@ -49,9 +49,10 @@
         }
 
         if(!array_filter($error)) {
-            # ASSIGNING SESSION VARIABLE TO USER #
+            # ASSIGNING SESSION VARIABLES TO USER #
             $_SESSION['user_id'] = $row['user_id'];
-
+            $_SESSION['username'] = $row['username'];
+            $_SESSION['date'] = $row['created_at'];
 
             # REDIRECTING USER TO THE CHATS #
             header('location: chat/index.php');
